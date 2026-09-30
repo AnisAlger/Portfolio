@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Anis Abbassi - Ingénieur en systèmes informatiques intelligents</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F1F3F2; --card:#E6EAE9; --ink:#16202A; --steel:#55636F; --line:#C9D1D3; --signal:#2456D6; --alert:#D98A00;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--paper:#131A21;--card:#1B242C;--ink:#E8EDEF;--steel:#9AA8B3;--line:#2E3A44;--signal:#7DA2FF;--alert:#F2B138;}
+}
+:root[data-theme="dark"]{--paper:#131A21;--card:#1B242C;--ink:#E8EDEF;--steel:#9AA8B3;--line:#2E3A44;--signal:#7DA2FF;--alert:#F2B138;}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1.0625rem/1.65 "Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","Public Sans",system-ui,sans-serif;line-height:1.1;margin:0}
+a{color:var(--signal)}
+a:focus-visible{outline:3px solid var(--signal);outline-offset:3px;border-radius:3px}
+.wrap{max-width:60rem;margin:0 auto;padding:0 1.5rem}
+header.hero{padding:5rem 0 3.5rem}
+h1{font-size:clamp(3rem,10vw,6.5rem);font-weight:800;letter-spacing:-.03em}
+.role{font-family:"Bricolage Grotesque",sans-serif;font-weight:500;font-size:clamp(1.25rem,3vw,1.75rem);color:var(--steel);margin:1rem 0 1.5rem}
+.pitch{max-width:38rem;margin:0 0 2rem}
+.links{display:flex;flex-wrap:wrap;gap:.75rem}
+.btn{display:inline-block;padding:.7rem 1.25rem;border:2px solid var(--ink);border-radius:6px;color:var(--ink);text-decoration:none;font-weight:600}
+.btn.main{background:var(--ink);color:var(--paper)}
+.btn:hover{border-color:var(--signal)}
+.stream{margin-top:3.5rem;display:flex;flex-wrap:wrap;gap:6px;max-width:44rem}
+.stream i{width:22px;height:22px;background:var(--line);border-radius:3px;display:block}
+.stream i.flag{background:var(--alert);animation:pulse 2.4s ease-in-out infinite}
+.caption{margin:.75rem 0 0;font-size:.9rem;color:var(--steel)}
+@keyframes pulse{50%{box-shadow:0 0 0 6px color-mix(in srgb,var(--alert) 30%,transparent)}}
+@media (prefers-reduced-motion:reduce){.stream i.flag{animation:none}html{scroll-behavior:auto}}
+section{padding:3.5rem 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(1.75rem,4vw,2.5rem);font-weight:700;margin-bottom:2rem}
+.job{display:grid;grid-template-columns:11rem 1fr;gap:1rem 2rem;padding:0 0 2rem}
+.job h3{font-size:1.25rem;margin-bottom:.25rem}
+.when{color:var(--steel);font-size:.95rem}
+.job ul{margin:.5rem 0 0;padding-left:1.1rem}
+.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:1.25rem}
+.proj{background:var(--card);padding:1.5rem;border-radius:4px;border-left:4px solid var(--signal)}
+.proj.lead{grid-column:1/-1;border-left-color:var(--alert)}
+.proj h3{font-size:1.2rem;margin-bottom:.5rem}
+.proj p{margin:0}
+dl.skills{display:grid;grid-template-columns:12rem 1fr;gap:.9rem 2rem;margin:0}
+dl.skills dt{font-weight:600}
+dl.skills dd{margin:0;color:var(--steel)}
+.edu p{margin:0 0 1rem}
+.edu strong{font-family:"Bricolage Grotesque",sans-serif;font-size:1.15rem}
+footer{padding:3.5rem 0 4rem;border-top:1px solid var(--line)}
+footer p{margin:.4rem 0}
+@media (max-width:640px){
+  header.hero{padding-top:3rem}
+  .job,dl.skills{grid-template-columns:1fr}
+  dl.skills{gap:.2rem}
+  dl.skills dd{margin-bottom:.8rem}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hero">
+  <h1>Anis Abbassi</h1>
+  <p class="role">Ingénieur en systèmes informatiques intelligents</p>
+  <p class="pitch">Titulaire d'un Master en Ingénierie des Systèmes Informatiques Intelligents, je conçois des solutions d'intelligence artificielle et d'automatisation, de la détection d'intrusions réseau aux applications web et mobiles. Rigoureux et bilingue français/anglais.</p>
+  <div class="links">
+    <a class="btn main" href="https://github.com/AnisAlger">Voir mon GitHub</a>
+    <a class="btn" href="https://linkedin.com/in/abbassi-anis">LinkedIn</a>
+    <a class="btn" href="mailto:anisabbassi360@gmail.com">M'écrire</a>
+  </div>
+  <div class="stream" role="img" aria-label="Flux de paquets réseau dont un paquet suspect signalé en orange">
+    <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+    <i class="flag"></i>
+    <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+  </div>
+  <p class="caption">Un paquet suspect dans le trafic : c'est le sujet de mon projet de fin d'études.</p>
+</header>
+
+<section id="projets">
+  <h2>Projets</h2>
+  <div class="projects">
+    <article class="proj lead">
+      <h3>Détection d'intrusions par Deep Learning</h3>
+      <p>Projet de fin d'études de Master chez Ericsson, Alger : conception d'un système d'IA basé sur le Deep Learning pour repérer les intrusions dans un réseau informatique.</p>
+    </article>
+    <article class="proj">
+      <h3>Détection d'intrusion par caméra</h3>
+      <p>Le système détecte un intrus et envoie automatiquement sa photo à la personne concernée.</p>
+    </article>
+    <article class="proj">
+      <h3>Automatisation de saisie d'articles</h3>
+      <p>Automatisation de la saisie d'articles dans un logiciel de gestion de stock.</p>
+    </article>
+    <article class="proj">
+      <h3>Application mobile étudiante</h3>
+      <p>Application Android qui aide les étudiants à organiser leur vie quotidienne.</p>
+    </article>
+    <article class="proj">
+      <h3>Sites et applications web</h3>
+      <p>Réalisation de sites vitrines et d'applications web avec bases de données.</p>
+    </article>
+  </div>
+  <p class="caption">Le code de mes projets est sur <a href="https://github.com/AnisAlger">github.com/AnisAlger</a>.</p>
+</section>
+
+<section id="experience">
+  <h2>Expérience</h2>
+  <div class="job">
+    <div class="when">18 février au 15 avril 2026<br>Alger</div>
+    <div>
+      <h3>Enseignant, INFSPM</h3>
+      <ul>
+        <li>Enseignement des modules informatiques</li>
+        <li>Préparation des supports pédagogiques</li>
+        <li>Évaluation des étudiants</li>
+        <li>Encadrement des travaux pratiques</li>
+      </ul>
+    </div>
+  </div>
+  <div class="job">
+    <div class="when">Projet de fin d'études<br>Alger</div>
+    <div>
+      <h3>Stagiaire, Ericsson</h3>
+      <ul>
+        <li>Conception d'un système d'IA de détection d'intrusions réseau, basé sur le Deep Learning</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="competences">
+  <h2>Compétences</h2>
+  <dl class="skills">
+    <dt>Langages</dt><dd>Python, C, Java, JavaScript, SQL</dd>
+    <dt>Web et mobile</dt><dd>HTML, CSS, Angular, React, Android (Java/Kotlin)</dd>
+    <dt>Intelligence artificielle</dt><dd>TensorFlow, OpenCV</dd>
+    <dt>Outils et méthodes</dt><dd>Git, GitHub, Linux, Agile</dd>
+    <dt>Langues</dt><dd>Français, anglais</dd>
+  </dl>
+</section>
+
+<section id="formation" class="edu">
+  <h2>Formation</h2>
+  <p><strong>Master en Ingénierie des Systèmes Informatiques Intelligents</strong><br>Université d'Alger 1</p>
+  <p><strong>Licence en Ingénierie des Systèmes Informatiques et Logiciels</strong><br>Université d'Alger 1</p>
+</section>
+
+<footer id="contact">
+  <h2>Contact</h2>
+  <p>Je cherche une équipe innovante en IA, automatisation et développement logiciel.</p>
+  <p>Email : <a href="mailto:anisabbassi360@gmail.com">anisabbassi360@gmail.com</a></p>
+  <p>Téléphone : <a href="tel:+213799999999">+213 7 82 91 67 55 </a></p>
+  <p>LinkedIn : <a href="https://linkedin.com/in/abbassi-anis">linkedin.com/in/abbassi-anis</a></p>
+  <p>GitHub : <a href="https://github.com/AnisAlger">github.com/AnisAlger</a></p>
+</footer>
+</div>
+</body>
+</html>
